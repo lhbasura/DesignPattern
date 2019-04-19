@@ -1,5 +1,7 @@
 package Observer;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Observable;
 
 
@@ -34,6 +36,7 @@ public class WeatherData  extends Observable {
 
     public void setMeasurements(float temperature, float pressure, String wind)
     {
+        Map<String,Integer> map=new HashMap<String,Integer>();
         this.setPressure(pressure);
         this.setWind(wind);
         this.setTemperature(temperature);

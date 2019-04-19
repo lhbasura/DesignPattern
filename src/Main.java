@@ -1,7 +1,7 @@
 import Decoration.Beverage;
 import Decoration.Coffe;
-import Decoration.Decorator.Soy;
-import Decoration.Decorator.Sugar;
+import Decoration.decorator.Soy;
+import Decoration.decorator.Sugar;
 import Decoration.Food;
 import Decoration.Size;
 

@@ -1,29 +1,31 @@
-package Decoration.Decorator;
-
+package Decoration.decorator;
 
 import Decoration.Food;
 import Decoration.Size;
 
-public class Soy extends CondimentDecorator {
-    public Soy(Food beverage) {
+
+public class Sugar extends CondimentDecorator {
+    public Sugar(Food beverage) {
         super(beverage);
     }
-    public String getDescription(){
-        return beverage.getDescription()+"+Soy";
+    @Override
+    public String getDescription() {
+        return beverage.getDescription()+"+Sugar";
     }
+
     @Override
     public double cost() {
         double cost=beverage.cost();
         switch (getSize())
         {
             case BIG:
-                cost+=0.5;
+                cost+=1;
                 break;
             case MIDDLE:
-                cost+=0.3;
+                cost+=0.8;
                 break;
             case SMALL:
-                cost+=0.2;
+                cost+=0.5;
                 break;
 
         }
