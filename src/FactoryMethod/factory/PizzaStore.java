@@ -2,9 +2,10 @@ package FactoryMethod.factory;
 
 import FactoryMethod.product.Pizza;
 
+import java.lang.reflect.InvocationTargetException;
+
 public abstract class PizzaStore {
-    public Pizza orderPizza(String type)
-    {
+    public Pizza orderPizza(String type) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Pizza pizza;
         pizza=createPizza(type);
         pizza.prepare();
@@ -19,5 +20,5 @@ public abstract class PizzaStore {
      * @param type
      * @return
      */
-    public abstract Pizza createPizza(String type);
+    public abstract Pizza createPizza(String type) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException;
 }
