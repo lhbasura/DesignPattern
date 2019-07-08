@@ -1,25 +1,23 @@
-import AbstractFactory.factory.FactoryProducer;
-import AbstractFactory.factory.HondaFactory;
-import AbstractFactory.factory.ToyotaFactory;
-import AbstractFactory.product.engine.HondaEngine;
-import AbstractFactory.product.engine.ToyotaEngine;
-import AbstractFactory.product.tyre.HondaTyre;
-import AbstractFactory.product.tyre.ToyotaTyre;
+
+import java.lang.reflect.Field;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        ToyotaFactory toyotaFactory = (ToyotaFactory) FactoryProducer.factory("toyota");
-        HondaFactory hondaFactory = (HondaFactory) FactoryProducer.factory("honda");
-        ToyotaEngine toyotaEngine = (ToyotaEngine) toyotaFactory.createEngine();
-        ToyotaTyre toyotaTyre = (ToyotaTyre) toyotaFactory.createTyre();
-        HondaEngine hondaEngine = (HondaEngine) hondaFactory.createEngine();
-        HondaTyre hongdaTyre = (HondaTyre) hondaFactory.createTyre();
-        toyotaEngine.start();
-        toyotaTyre.roll();
-        toyotaEngine.stop();
+    public static void main(String[]args) throws Exception {
+        Integer a=1;
+        Integer b=2;
+        System.out.println(String.format("before swap\na:%d,b:%d",a,b));
 
-        hondaEngine.start();
-        hongdaTyre.roll();
-        hondaEngine.stop();
+        swap(a,b);
+        System.out.println(String.format("after swap\na:%d,b:%d",a,b));
+
+    }
+    public static void  swap(Integer a,Integer b) throws Exception
+    {
+
+        Field field=Integer.class.getDeclaredField("value");
+        field.setAccessible(true);
+        int temp=a.intValue();
+        field.set(a,b.intValue());
+        field.set(b,new Integer(temp));
     }
 }
