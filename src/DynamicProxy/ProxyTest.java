@@ -10,8 +10,7 @@ public class ProxyTest {
     {
         MailService mailService=new MailServiceImp();
         DynamicProxy dynamicProxy=new DynamicProxy(mailService);
-        MailService service= (MailService) Proxy.newProxyInstance(mailService.getClass().getClassLoader(),
-                mailService.getClass().getInterfaces(),dynamicProxy);
+        MailService service= dynamicProxy.getProxy();
         service.sendMail();
 
     }
