@@ -1,6 +1,6 @@
-package Proxy;
+package StaticProxy;
 
-import Proxy.model.User;
+import StaticProxy.model.User;
 import org.junit.jupiter.api.Test;
 
 public class ProxyTest {

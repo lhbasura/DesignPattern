@@ -1,6 +1,6 @@
-package Proxy;
+package StaticProxy;
 
-import Proxy.model.User;
+import StaticProxy.model.User;
 
 public class UserProxy implements UserService {
     private UserService userService;

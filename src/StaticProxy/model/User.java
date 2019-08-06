@@ -1,4 +1,4 @@
-package Proxy.model;
+package StaticProxy.model;
 
 public class User {
     private String username;
