@@ -1,4 +1,4 @@
-package CglibProxy;
+package Proxy.CglibProxy;
 
 public class ProductService {
     public void sell()

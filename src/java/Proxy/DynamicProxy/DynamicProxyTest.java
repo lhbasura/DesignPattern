@@ -1,10 +1,8 @@
-package DynamicProxy;
+package Proxy.DynamicProxy;
 
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Proxy;
-
-public class ProxyTest {
+public class DynamicProxyTest {
     @Test
     public  void test()
     {

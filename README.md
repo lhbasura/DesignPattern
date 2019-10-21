@@ -45,12 +45,12 @@
 └── src
     ├── AbstractFactory
     ├── Decoration
-    ├── DynamicProxy
+    ├── Proxy.DynamicProxy
     ├── FactoryMethod
-    ├── CglibProxy 
+    ├── Proxy.CglibProxy 
     ├── Main.java
     ├── Observer
     ├── Singleton
-    └── StaticProxy
+    └── Proxy.StaticProxy
 
  ``` 

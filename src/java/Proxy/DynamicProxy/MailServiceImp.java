@@ -1,4 +1,4 @@
-package DynamicProxy;
+package Proxy.DynamicProxy;
 
 public class MailServiceImp implements MailService{
     @Override
