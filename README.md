@@ -21,7 +21,7 @@
 7.代理模式(Proxy)√  
 #### 行为型模式
 1.职责链模式(Chain of Responsibility)  
-2.命令模式(Command)√    
+2.命令模式(Command)√  ：  
 3.解释器模式(Interpreter)  
 4.迭代器模式(Iterator)  
 5.中介者模式(Mediator)  
