@@ -1,17 +1,19 @@
-package FactoryMethod.factory;
+package Prototype.factory;
 
-import FactoryMethod.product.NyCheesePizza;
-import FactoryMethod.product.NyVegglePizza;
-import FactoryMethod.product.Pizza;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
+import Prototype.product.NyCheesePizza;
+import Prototype.product.NyVegglePizza;
+import Prototype.product.Pizza;
 
 public class NyPizzaStore extends PizzaStore {
 
     @Override
+    protected void loadCache() {
+
+    }
+
+    @Override
     protected Pizza createPizza(String type) {
-        Pizza pizza = null;
+        Pizza pizza = map.get("Ny"+type);
         if ("Cheese".equals(type)) {
             pizza = new NyCheesePizza();
         }

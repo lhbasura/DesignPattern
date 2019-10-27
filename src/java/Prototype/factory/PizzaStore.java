@@ -1,10 +1,13 @@
-package FactoryMethod.factory;
+package Prototype.factory;
 
-import FactoryMethod.product.Pizza;
+import Prototype.product.Pizza;
 
-import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
 
 public abstract class PizzaStore {
+
+    protected Map<String,Pizza>map;
+    protected abstract void loadCache();
     public Pizza orderPizza(String type)
     {
         Pizza pizza;

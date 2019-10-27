@@ -1,8 +1,6 @@
-package FactoryMethod.product;
+package Prototype.product;
 
-import lombok.Data;
-
-public class NyVegglePizza extends Pizza{
+public class NyVegglePizza extends Pizza {
     public NyVegglePizza(){
         this.name="NyVegglePizza";
         this.sauce="NyVegglePizza sauce";

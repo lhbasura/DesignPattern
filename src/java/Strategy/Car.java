@@ -1,5 +1,4 @@
 package Strategy;
 
-public class Duck {
-
+public class Car {
 }

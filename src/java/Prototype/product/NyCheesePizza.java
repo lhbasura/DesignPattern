@@ -1,8 +1,6 @@
-package FactoryMethod.product;
+package Prototype.product;
 
-import lombok.Data;
-
-public class NyCheesePizza extends Pizza{
+public class NyCheesePizza extends Pizza {
 
     public NyCheesePizza()
     {
