@@ -6,13 +6,18 @@ import Prototype.product.Pizza;
 
 public class ChPizzaStore extends PizzaStore {
     @Override
+    public void loadCache() {
+        map.put("Cheese",new ChCheesePizza());
+        map.put("Veggle",new ChVegglePizza());
+    }
+
+    @Override
     protected Pizza createPizza(String type) {
         Pizza pizza = null;
-        if ("Cheese".equals(type)) {
-            pizza = new ChCheesePizza();
-        }
-        if ("Veggle".equals(type)) {
-            pizza = new ChVegglePizza();
+        try {
+            pizza = map.get(type).clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
         }
         return pizza;
     }

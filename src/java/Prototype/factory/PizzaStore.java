@@ -2,12 +2,13 @@ package Prototype.factory;
 
 import Prototype.product.Pizza;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public abstract class PizzaStore {
 
-    protected Map<String,Pizza>map;
-    protected abstract void loadCache();
+    protected Map<String,Pizza>map=new HashMap<>();
+    public abstract void loadCache();
     public Pizza orderPizza(String type)
     {
         Pizza pizza;

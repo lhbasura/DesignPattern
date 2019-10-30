@@ -26,4 +26,9 @@ public abstract class Pizza implements Cloneable{
                 ", sauce='" + sauce + '\'' +
                 '}';
     }
+
+    @Override
+    public Pizza clone() throws CloneNotSupportedException {
+        return (Pizza) super.clone();
+    }
 }
