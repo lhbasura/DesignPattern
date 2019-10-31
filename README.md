@@ -34,20 +34,23 @@
  
 >目录结构：
 ```
+
 .
 ├── README.md
 ├── directoryList.md
 ├── gen_directory.sh
 ├── pom.xml
 └── src
-    ├── AbstractFactory
-    ├── Decoration
-    ├── Proxy.DynamicProxy
-    ├── FactoryMethod
-    ├── Proxy.CglibProxy 
-    ├── Main.java
-    ├── Observer
-    ├── Singleton
-    └── Proxy.StaticProxy
-
+    └── java
+        ├── AbstractFactory
+        ├── Builder
+        ├── Command
+        ├── Decoration
+        ├── Delegate
+        ├── FactoryMethod
+        ├── Observer
+        ├── Prototype
+        ├── Proxy
+        ├── Singleton
+        └── Strategy
  ``` 
