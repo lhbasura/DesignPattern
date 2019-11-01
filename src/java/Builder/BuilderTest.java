@@ -6,6 +6,15 @@ public class BuilderTest {
     @Test
     public void test()
     {
+        Window window=Window.builder()
+                .title("baidu.com")
+                .content("this is baidu page")
+                .height(10)
+                .width(10)
+                .x(0)
+                .y(0)
+                .build();
+        System.out.println(window);
 
     }
 }
