@@ -14,7 +14,16 @@ public class BuilderTest {
                 .x(0)
                 .y(0)
                 .build();
+        Dialog dialog=Dialog.builder()
+                .title("baidu.com")
+                .content("this is baidu page")
+                .height(10)
+                .width(10)
+                .x(0)
+                .y(0)
+                .build();
         System.out.println(window);
+        System.out.println(dialog);
 
     }
 }
