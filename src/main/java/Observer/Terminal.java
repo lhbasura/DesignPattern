@@ -1,21 +1,12 @@
 package Observer;
 
-import java.util.Observable;
 import java.util.Observer;
 
-public class Terminal implements Observer {
-
-    private float temperature;
-
-
-    @Override
-    public void update(Observable o, Object arg) {
-        if(o instanceof WeatherData){
-            this.temperature=((WeatherData) o).getTemperature();
-        }
-        display();
-    }
-    public void display(){
-        System.out.println(String.format("temperature:%f°C",this.temperature));
-    }
+/**
+ * @author asura
+ * @date 2020/6/12 17:26
+ * @description 终端接口，作为观察者，不同终端会有不同实现
+ */
+public interface Terminal extends Observer {
+    public void display();
 }
