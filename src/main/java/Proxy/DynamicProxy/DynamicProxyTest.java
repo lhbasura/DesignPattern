@@ -1,6 +1,7 @@
 package Proxy.DynamicProxy;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 public class DynamicProxyTest {
     @Test

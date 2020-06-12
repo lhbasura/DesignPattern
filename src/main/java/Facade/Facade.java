@@ -4,17 +4,17 @@ import lombok.Data;
 
 @Data
 public class Facade {
-    Commic commic;
+    Comic comic;
     WordBook wordBook;
     Novel novel;
     public Facade(){
-        commic = new Commic();
+        comic = new Comic();
         wordBook = new WordBook();
         novel = new Novel();
     }
 
     public void readCommic(){
-        commic.read();
+        comic.read();
     }
     public void readWordBook(){
         wordBook.read();

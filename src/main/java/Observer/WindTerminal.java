@@ -19,6 +19,6 @@ public class WindTerminal implements Observer,Terminal{
 
     @Override
     public void display(){
-        System.out.println(String.format("wind:%s°C",this.wind));
+        System.out.println(String.format("wind:%s",this.wind));
     }
 }

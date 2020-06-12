@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * @author asura
  * @date 2020/6/12 17:21
- * @description
+ * @description 测试代码
  */
 public class ObserverTest {
     @Test

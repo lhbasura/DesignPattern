@@ -1,6 +1,7 @@
 package Delegate;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 public class DelegateTest {
     @Test

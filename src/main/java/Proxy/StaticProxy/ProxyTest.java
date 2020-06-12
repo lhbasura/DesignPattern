@@ -1,11 +1,12 @@
 package Proxy.StaticProxy;
 
 import Proxy.StaticProxy.model.User;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class ProxyTest {
+
     @Test
-    void test()
+    public void test()
     {
         UserService userService=new UserProxy();
         User user=new User();

@@ -5,10 +5,6 @@ import Proxy.StaticProxy.model.User;
 public class UserProxy implements UserService {
     private UserService userService;
 
-    void initUserService()
-    {
-        userService=new UserServiceImp();
-    }
 
     public UserProxy(){
         this.userService=new UserServiceImp();
